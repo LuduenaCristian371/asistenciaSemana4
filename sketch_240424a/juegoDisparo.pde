@@ -22,11 +22,11 @@ public void draw(){
  blanco.mover();
 }
 
-public void keyPressed(){
- if(key=='d'){
+public void mousePressed(){
+ if(mousePressed){
+   if(mouseButton==RIGHT)
    arma.mover(0);
- }
- if(key=='a'){
+ } else if(mouseButton==LEFT){
    arma.mover(1);
  }
 }
