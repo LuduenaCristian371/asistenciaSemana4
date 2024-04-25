@@ -14,9 +14,10 @@ public void setup(){
 
 public void draw(){
  background(0);
- image(fondo,800,800);
+ tint(#503DA7);
+ image(fondo,350,390);
+ noTint();
  arma.dibujar();
- 
  blanco.dibujar();
  blanco.mover();
 }
