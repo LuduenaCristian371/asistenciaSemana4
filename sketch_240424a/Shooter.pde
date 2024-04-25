@@ -9,4 +9,21 @@ class Shooter{
    imageMode(CENTER);
    image(imagen,posicion.x,posicion.y,200,200);
   }
+  
+  public void mover(int direccion){
+    if(direccion==0){
+      this.posicion.x+=this.velocidad.x;
+    }
+    if(direccion==1){
+      this.posicion.x-=this.velocidad.x;
+    } 
+  }
+  
+  public void setPosicion(PVector posicion){
+    this.posicion=posicion;
+  }
+  
+  public void setVelocidad(PVector velocidad){
+   this.velocidad=velocidad;
+  }
 }
